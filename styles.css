@@ -47,10 +47,6 @@ input, textarea {
 }
 
  
-.inline {
-   width:unset;
-   border: 2px black solid;
-}
 
 fieldset {
     padding: 25px 0;
