@@ -18,22 +18,45 @@
    
    <form id="survey-form" action="#">
        <fieldset>
-             <label for="" >Name: <input id="name" type="text" required></label>
-            <label for="">Email: <input type="email" name="" id="email" required></label>
-             <label for="">Phone: <input type="tel" name="" id=""></label>
+             <label for="name" id="name-label">Name: <input id="name" name="name" type="text" required placeholder="Enter your name"></label>
+            <label for="email" id="email-label">Email: <input type="email" name="email" id="email" required placeholder="enter your email"></label>
+             <label for="phone" id="phone-label">Phone: <input type="tel" name="phone" id="phone" placeholder="Enter your phone number"></label>
              
          </fieldset>    
        <fieldset>
-           <label for="">Camera Modelcamera model/option/select</label>
-           <label for="">Serial # </label>
-           <label for="">Where did you purchase camera/radio</label>
-           <label for="">Purchase Date</label>
-           
+           <label for="" >Camera Model
+           <select value="" id="dropdown" name="model" >
+            <option name="" id="" value="" >Select one</option>
+               <option name="" id="" value="zorki1">Zorki 1</option>
+               <option name="" id="" value="zorki2">Zorki 2</option>
+               <option name="" id="" value="zorki3">Zorki 3</option>
+               <option name="" id="" value="zorki4">Zorki 4</option>
+               <option name="" id="" value="zorki5">Zorki 5</option>
+               <option name="" id="" value="zorki6">Zorki 6</option>
+               </select>
+            </label>
+           <label for="number" id="number-label" >Serial # <input type="number"   name="serial" id="number" name="serial" min="0" max="10000" placeholder="Enter serial number"></label>
+
+        <div class="inline">
+           <label for="" >Where did you purchase camera? </label>
+           <label for="ebay" ><input type="radio"  id="ebay" name="purchase-store" value="ebay" class="inline">Ebay</label>
+  <label for="amazon" ><input type="radio"  id="amazon" name="purchase-store" value="amazon" class="inline">Amazon</label>
+<label for="etsy" ><input type="radio"  id="etsy" name="purchase-store" value="etsy" class="inline">Etsy</label>
+</div>
+           <label for="purchase-date" >Purchase Date: <input type="date" name="purchase-date" class="inline" id="purchase-date"></label>
+          
+           <label for="">Please review your purchase experience:</label>
+           <textarea id="" name="review" rows="4" cols="50">
+            
+            </textarea>
        </fieldset>
        <fieldset>
-           <label for="">Would you like to sign up for oour newslettersign up email/checkbox</label>
+           <label for="">Would you like to sign up for our newsletter or email</label>
+           <label for="">Newsletter: <input type="checkbox" name="corespondence" id="" value="newsletter" class="inline"></label>
+           <label for="">Email: <input type="checkbox" name="corespondence" id="" value="email" class="inline"></label>
+           <label for="">None: <input type="checkbox" name="corespondence" id="" value="none" class="inline"></label>
        </fieldset>
-       <button>Submit</button>
+       <button id="submit">Submit</button>
    </form>
 </body>
 </html>
